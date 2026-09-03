@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
-import { Code2, Globe, User, type LucideIcon } from 'lucide-react';
+import { Code2, Github, Globe, User, type LucideIcon } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -111,7 +111,7 @@ const WelcomeScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
                 className="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-6 sm:mb-8 md:mb-12"
                 variants={childVariants}
               >
-                {[Code2, User].map((Icon, index) => (
+                {[Code2, User, Github].map((Icon, index) => (
                   <div key={index} data-aos="fade-down" data-aos-delay={index * 200}>
                     <IconButton Icon={Icon} />
                   </div>
