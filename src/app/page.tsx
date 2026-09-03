@@ -1,5 +1,7 @@
 'use client';
 
+import AnimatedBackground from '@/components/Background';
+import Navbar from '@/components/Navbar';
 import WelcomeScreen from '@/components/WelcomeScreen';
 import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
@@ -15,6 +17,8 @@ export default function Home() {
       </AnimatePresence>
 
       <>
+        <Navbar />
+        <AnimatedBackground />
         <footer>
           <center>
             <hr className="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />
