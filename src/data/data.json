@@ -87,5 +87,20 @@
         "Preparation for careers in software development, data analysis, cybersecurity, and technology-related fields."
       ]
     }
-  ]
+  ],
+  "portfolio": {
+    "id": 1,
+    "name": "Fortune Jite",
+    "title": "Software Engineer",
+    "description": "I am a passionate software engineer with a strong focus on full-stack development and web technologies. I specialize in building scalable and efficient web applications using modern frameworks and tools. With a keen eye for detail and a commitment to delivering high-quality code, I strive to create seamless user experiences and innovative solutions. My expertise spans both front-end and back-end development, allowing me to contribute effectively to all stages of the software development lifecycle.",
+    "email": "fortunejite1234@example.com",
+    "phone": "+234 901 234 5678",
+    "location": "Delta, Nigeria",
+    "date_started": "2020-01",
+    "social_links": {
+      "github": "https://github.com/Fortunejite",
+      "linkedin": "https://www.linkedin.com/in/fortunejite",
+      "whatsapp": "https://wa.me/2349012345678"
+    }
+  }
 }

@@ -1,5 +1,6 @@
 'use client';
 
+import About from '@/components/About';
 import AnimatedBackground from '@/components/Background';
 import Home from '@/components/Home';
 import Navbar from '@/components/Navbar';
@@ -22,6 +23,7 @@ export default function HomePage() {
           <Navbar />
           <AnimatedBackground />
           <Home />
+          <About />
           <footer>
             <center>
               <hr className="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />

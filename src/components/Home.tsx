@@ -3,6 +3,7 @@ import { Github, Linkedin, Mail, ExternalLink, Sparkles, LucideIcon, MessageCirc
 import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { portfolio } from '@/data/data.json'
 
 // Memoized Components
 const MainTitle = memo(() => (
@@ -70,9 +71,9 @@ const PAUSE_DURATION = 2000;
 const WORDS = ["Problem Solver", "Tech Innovator", "AI Enthusiast", "Web3 Enthusiast"];
 const TECH_STACK = ["Next.js", "PostgreSQL", "TypeScript", "Tailwind CSS"];
 const SOCIAL_LINKS = [
-  { icon: Github, link: "https://github.com/Fortunejite" },
-  { icon: Linkedin, link: "https://www.linkedin.com/in/fortunejite" },
-  { icon: MessageCircle, link: "https://wa.me/9133040725" }
+  { icon: Github, link: portfolio.social_links.github },
+  { icon: Linkedin, link: portfolio.social_links.linkedin },
+  { icon: MessageCircle, link: portfolio.social_links.whatsapp }
 ];
 
 const Home = () => {
