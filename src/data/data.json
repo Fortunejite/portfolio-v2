@@ -1,0 +1,91 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "ShopSphere",
+      "short_description": "A full-stack multi-vendor e-commerce platform that enables users to create and manage online stores with custom domains, manage products and orders, and securely process payments through Stripe and Paystack.",
+      "long_description": "ShopSphere is a full-stack multi-vendor e-commerce platform designed to allow users to create and operate their own online stores. Each store can have its own domain, storefront, product catalog, and administrative dashboard, providing a complete foundation for running an independent e-commerce business. The platform includes product and inventory management, product variants, shopping carts, order processing, customer management, analytics, and Stripe-powered payments. It also implements authentication, role-based access control, domain-based routing, Firebase-powered media storage, and a responsive UI designed for both desktop and mobile users.",
+      "features": [
+        "Multi-Vendor Stores — Users can create and manage independent online shops.",
+        "Custom Domain Routing — Each store can be accessed through its own domain/subdomain.",
+        "Product Management — Create, update, and manage products, categories, variants, pricing, and inventory.",
+        "Product Variants — Supports attributes such as size, color, and other custom product options.",
+        "Shopping Cart — Persistent Redux-powered cart with local storage support.",
+        "Order Management — Customers can place orders and track their order status.",
+        "Stripe Payments — Secure payment processing with Stripe Connect and webhook integration.",
+        "Paystack Payments — Secure payment processing with Paystack subaccounts and webhook integration.",
+        "Inventory Tracking — Stock levels and low-stock conditions are monitored.",
+        "Admin Dashboard — Store owners get centralized tools for managing their store.",
+        "Authentication & Authorization — Secure registration/login with protected routes and role-based access.",
+        "Product Image Storage — Cloudflare R2 bucket handles product media.",
+        "Responsive UI — Mobile-first interface built with Tailwind CSS and shadcn/ui.",
+        "Form Validation — React Hook Form and Zod provide structured form handling and validation."
+      ],
+      "github": "https://github.com/Fortunejite/ShopSphere",
+      "website": "https://shop-sphere-six-ivory.vercel.app/",
+      "type": "side-project",
+      "start_date": "2025-12",
+      "end_date": "2026-03",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "React Hook Form",
+        "Zod",
+        "Redux Toolkit",
+        "Cloudflare R2",
+        "Stripe API",
+        "Paystack API"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-03%20091048.png"
+    }
+  ],
+  "education": [
+    {
+      "id": 1,
+      "institution": "ALX Software Engineering Program",
+      "degree": "Certificate of Completion",
+      "field": "Software Engineering",
+      "website": "https://www.alxafrica.com/",
+      "certificate": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/education/ALX%20CERTIFICATE.png",
+      "start_date": "2022-08",
+      "end_date": "2023-11",
+      "description": "The ALX Software Engineering Program is a comprehensive training initiative designed to equip individuals with the skills and knowledge required for a successful career in software engineering. The program covers a wide range of topics, including programming languages, web development, data structures, algorithms, software design principles, and best practices in software development. Participants engage in hands-on projects and real-world scenarios to apply their learning and gain practical experience. The program emphasizes problem-solving, critical thinking, and collaboration, preparing graduates to excel in the dynamic field of software engineering.",
+      "learning_outcomes": [
+        "Proficiency in programming languages such as Python, JavaScript, and C.",
+        "Understanding of web development technologies including HTML, CSS, and JavaScript frameworks.",
+        "Knowledge of data structures, algorithms, and software design principles.",
+        "Experience with version control systems like Git and collaborative development workflows.",
+        "Ability to develop and deploy web applications using modern frameworks and tools.",
+        "Familiarity with databases, both SQL and NoSQL, and data management techniques.",
+        "Exposure to software testing methodologies and quality assurance practices.",
+        "Development of problem-solving skills through coding challenges and real-world projects.",
+        "Understanding of software development life cycle (SDLC) and agile methodologies.",
+        "Preparation for technical interviews and career readiness in the software engineering field."
+      ]
+    },
+    {
+      "id": 2,
+      "institution": "Federal University of Petroleum Resources, Effurun (FUPRE)",
+      "degree": "Bachelor of Science (B.Sc.)",
+      "field": "Computer Science",
+      "website": "https://www.fupre.edu.ng/",
+      "start_date": "2022-01",
+      "end_date": "2026-08",
+      "description": "The Federal University of Petroleum Resources, Effurun (FUPRE) is a prestigious institution that offers a comprehensive Computer Science program. The curriculum covers fundamental and advanced topics in computer science, including programming, algorithms, data structures, software engineering, databases, networking, and artificial intelligence. Students engage in theoretical learning as well as practical projects to develop their technical skills and problem-solving abilities. The program prepares graduates for careers in software development, data analysis, cybersecurity, and other technology-related fields.",
+      "learning_outcomes": [
+        "Proficiency in programming languages such as Python, Java, C++, and JavaScript.",
+        "Understanding of algorithms, data structures, and computational theory.",
+        "Knowledge of software engineering principles, including design patterns and development methodologies.",
+        "Experience with database management systems (SQL and NoSQL) and data modeling.",
+        "Familiarity with computer networks, protocols, and cybersecurity practices.",
+        "Ability to develop web applications using modern frameworks and technologies.",
+        "Exposure to artificial intelligence, machine learning, and data science concepts.",
+        "Development of problem-solving skills through coding challenges and projects.",
+        "Understanding of operating systems, computer architecture, and system programming.",
+        "Preparation for careers in software development, data analysis, cybersecurity, and technology-related fields."
+      ]
+    }
+  ]
+}
