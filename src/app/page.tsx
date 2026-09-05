@@ -2,6 +2,7 @@
 
 import About from '@/components/About';
 import AnimatedBackground from '@/components/Background';
+import ContactPage from '@/components/Contact';
 import Home from '@/components/Home';
 import Navbar from '@/components/Navbar';
 import Portfolio from '@/components/Portfolio';
@@ -26,6 +27,7 @@ export default function HomePage() {
           <Home />
           <About />
           <Portfolio />
+          <ContactPage />
           <footer>
             <center>
               <hr className="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />
