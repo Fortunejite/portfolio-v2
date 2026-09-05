@@ -4,6 +4,7 @@ import About from '@/components/About';
 import AnimatedBackground from '@/components/Background';
 import Home from '@/components/Home';
 import Navbar from '@/components/Navbar';
+import Portfolio from '@/components/Portfolio';
 import WelcomeScreen from '@/components/WelcomeScreen';
 import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
@@ -24,6 +25,7 @@ export default function HomePage() {
           <AnimatedBackground />
           <Home />
           <About />
+          <Portfolio />
           <footer>
             <center>
               <hr className="my-3 border-gray-400 opacity-15 sm:mx-auto lg:my-6 text-center" />

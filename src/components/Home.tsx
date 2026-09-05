@@ -4,6 +4,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { portfolio } from '@/data/data.json'
+import Link from "next/link"
 
 // Memoized Components
 const MainTitle = memo(() => (
@@ -35,7 +36,7 @@ const TechStack = memo(({ tech }: { tech: string }) => (
 TechStack.displayName = "TechStack";
 
 const CTAButton = memo(({ href, text, icon: Icon }: { href: string; text: string; icon: LucideIcon }) => (
-  <a href={href}>
+  <Link href={href}>
     <button className="group relative w-40">
       <div className="absolute -inset-0.5 bg-linear-to-r from-[#4f52c9] to-[#8644c5] rounded-xl opacity-50 blur-md group-hover:opacity-90 transition-all duration-700"></div>
       <div className="relative h-11 bg-[#030014] backdrop-blur-xl rounded-lg border border-white/10 leading-none overflow-hidden">
@@ -48,7 +49,7 @@ const CTAButton = memo(({ href, text, icon: Icon }: { href: string; text: string
         </span>
       </div>
     </button>
-  </a>
+  </Link>
 ));
 CTAButton.displayName = "CTAButton";
 
@@ -185,7 +186,7 @@ const Home = () => {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
-                  <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
+                  <CTAButton href="#Portfolio" text="Projects" icon={ExternalLink} />
                   <CTAButton href="#Contact" text="Contact" icon={Mail} />
                 </div>
 

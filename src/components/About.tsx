@@ -5,7 +5,6 @@ import {
   Award,
   Globe,
   ArrowUpRight,
-  Sparkles,
   LucideIcon,
 } from 'lucide-react';
 import AOS from 'aos';
@@ -59,9 +58,7 @@ const Header = memo(() => (
       data-aos="zoom-in-up"
       data-aos-duration="800"
     >
-      <Sparkles className="w-5 h-5 text-purple-400" />
       Transforming ideas into digital experiences
-      <Sparkles className="w-5 h-5 text-purple-400" />
     </p>
   </div>
 ));
@@ -250,7 +247,7 @@ const AboutPage = () => {
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
                 </button>
               </Link>
-              <Link href="#Portofolio" className="w-full lg:w-auto">
+              <Link href="#Portfolio" className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="1000"
@@ -265,7 +262,7 @@ const AboutPage = () => {
           <ProfileImage />
         </div>
 
-        <Link href="#Portofolio">
+        <Link href="#Portfolio">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 cursor-pointer">
             {statsData.map((stat) => (
               <StatCard key={stat.label} {...stat} />
