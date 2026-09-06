@@ -147,6 +147,92 @@
         "PostgreSQL"
       ],
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20064626.png"
+    },
+    {
+      "id": 5,
+      "name": "Job Pilot",
+      "short_description": "",
+      "long_description": "",
+      "features": [],
+      "github": "https://github.com/Fortunejite/jobpilot",
+      "website": "https://jobpilot-chi.vercel.app/",
+      "type": "side-project",
+      "start_date": "2024-11",
+      "end_date": "2025-01",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Auth.js",
+        "Zod",
+        "MongoDB",
+        "Mongoose",
+        "Firebase Storage"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20202743.png"
+    },
+    {
+      "id": 5,
+      "name": "Invest Pro",
+      "short_description": "",
+      "long_description": "",
+      "features": [],
+      "github": "https://github.com/Fortunejite/investpro",
+      "website": "https://investpro-liart.vercel.app/",
+      "type": "side-project",
+      "start_date": "2026-01",
+      "end_date": "2026-02",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express.js",
+        "Nodemailer",
+        "BullMQ",
+        "Redis",
+        "Prisma",
+        "PostgreSQL",
+        "TradingView Widget",
+        "Telegram Bot API",
+        "CoinLore API"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20203623.png"
+    },
+    {
+      "id": 5,
+      "name": "NFT Marketplace",
+      "short_description": "",
+      "long_description": "",
+      "features": [],
+      "github": "https://github.com/Fortunejite/NFT-MarketPlace",
+      "website": "https://nft-market-place-flame.vercel.app/",
+      "type": "side-project",
+      "start_date": "2024-12",
+      "end_date": "2025-01",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Aptos Blockchain"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20204743.png"
+    },
+    {
+      "id": 6,
+      "name": "Movie Zone",
+      "short_description": "",
+      "long_description": "",
+      "features": [],
+      "github": "https://github.com/Fortunejite/movie-zone",
+      "type": "side-project",
+      "start_date": "2024-01",
+      "end_date": "2024-01",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "CSS",
+        "The Movie DB API"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20201005.png"
     }
   ],
   "education": [
