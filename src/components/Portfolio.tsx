@@ -112,6 +112,7 @@ const techStacks = [
   { icon: "nextjs.svg", language: "Next JS" },
   { icon: "nodejs.svg", language: "Node JS" },
   { icon: "expressjs.svg", language: "Express JS" },
+  { icon: "prisma.svg", language: "Prisma" },
   { icon: "postgresql.svg", language: "PostgreSQL" },
   { icon: "mysql.svg", language: "MySQL" },
   { icon: "mongodb.svg", language: "MongoDB" },
