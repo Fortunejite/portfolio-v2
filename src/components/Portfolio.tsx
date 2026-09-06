@@ -112,6 +112,7 @@ const techStacks = [
   { icon: "nextjs.svg", language: "Next JS" },
   { icon: "nodejs.svg", language: "Node JS" },
   { icon: "expressjs.svg", language: "Express JS" },
+  { icon: "authdotjs.svg", language: "Auth.js" },
   { icon: "prisma.svg", language: "Prisma" },
   { icon: "postgresql.svg", language: "PostgreSQL" },
   { icon: "mysql.svg", language: "MySQL" },
@@ -125,6 +126,8 @@ const techStacks = [
   { icon: "vercel.svg", language: "Vercel" },
   { icon: "cloudflare.svg", language: "Cloudflare" },
   { icon: "socket-io.svg", language: "Socket.IO" },
+  { icon: "visual-studio-code.svg", language: "VS Code" },
+  { icon: "linux.svg", language: "Linux" },
 ];
 
 export default function Portfolio() {

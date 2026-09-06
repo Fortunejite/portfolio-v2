@@ -2,6 +2,74 @@
   "projects": [
     {
       "id": 1,
+      "name": "FlyFit",
+      "short_description": "A production fitness studio platform built for a Bahrain-based women-only bungee fitness studio, enabling members to browse packages and classes, purchase memberships, manage group packages, and book classes online.",
+      "long_description": "FlyFit is a full-stack web application developed for a Bahrain-based women-only bungee fitness studio. The platform provides the studio with a complete digital membership and booking experience, allowing customers to create accounts, browse fitness packages and class schedules, purchase packages, manage group memberships, and book or cancel classes. The application integrates directly with ERPNext/Frappe, which serves as the central source of truth for members, packages, classes, bookings, and payments. I implemented a backend-for-frontend architecture using Next.js API routes to securely communicate with ERPNext and external payment providers without exposing sensitive credentials to the client. The platform supports Credimax/Mastercard credit-card payments, including 3D Secure authentication, as well as BenefitPay, a Bahrain-based payment gateway. Payment verification and membership activation are handled server-side, with idempotency safeguards to prevent duplicate payment records. The project was delivered as a freelance project for a Bahrain-based client and is actively used by 300+ members, making it a strong example of building and integrating a production system for a real business.",
+      "features": [
+        "Member Registration & Authentication — ERPNext-backed signup, login, session management, and protected member areas.",
+        "Fitness Package Marketplace — Members can browse available packages, view package details, and purchase memberships.",
+        "Class Scheduling — Displays available fitness classes with dates, times, trainers, and capacity information.",
+        "Online Class Booking — Members can book classes using their active packages.",
+        "Booking Management — Members can view their bookings and cancel eligible bookings.",
+        "Group Packages — Supports packages with multiple seats and allows members to assign additional participants.",
+        "Membership Management — Members can view their active packages, remaining sessions, usage, and expiration information.",
+        "Credimax Payments — Integrated hosted credit-card checkout with 3D Secure authentication and payment verification.",
+        "BenefitPay Integration — Supports Bahrain's BenefitPay payment gateway with encrypted transaction data and server-side verification.",
+        "ERPNext Integration — Synchronizes users, customers, gym members, packages, classes, bookings, and payments with ERPNext.",
+        "Backend-for-Frontend Architecture — Next.js API routes act as a secure intermediary between the frontend, ERPNext, and payment gateways.",
+        "Caching — Package and class data use server-side caching with stale-data fallback to reduce unnecessary ERPNext requests."
+      ],
+      "website": "https://flyfitbh.com",
+      "type": "freelance-project",
+      "start_date": "2026-06",
+      "end_date": "2026-07",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Zod",
+        "ERPNext / Frappe",
+        "Credimax",
+        "BenefitPay"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20065751.png"
+    },
+    {
+      "id": 2,
+      "name": "Moorafrika",
+      "short_description": "A production e-commerce platform built for Moorafrika, a fashion brand, providing customers with a seamless online shopping experience for discovering products, managing carts, and placing orders.",
+      "long_description": "Moorafrika is a production e-commerce platform developed for a fashion brand to establish and manage its online storefront. The platform provides customers with a dedicated digital shopping experience where they can browse the brand's products, view product details, add items to their cart, and complete purchases online. Developed as a freelance project, the platform was built around the brand's real-world business requirements and is actively used by the business to support its online operations. The project involved translating a fashion brand's identity and commercial requirements into a functional e-commerce experience rather than building a purely demonstrative or academic project.",
+      "features": [
+        "Online Storefront — Dedicated digital storefront for the Moorafrika fashion brand.",
+        "Product Catalog — Customers can browse the brand's available products.",
+        "Product Details — Individual product pages provide customers with relevant product information.",
+        "Shopping Cart — Customers can add and manage products before checkout.",
+        "Online Ordering — Supports the customer purchasing/order flow.",
+        "Responsive Design — Designed to provide a consistent shopping experience across devices.",
+        "Brand-Focused UI — The storefront is tailored around the visual identity and presentation of the fashion brand.",
+        "Production Deployment — Built and deployed for actual business use rather than as a demo project."
+      ],
+      "website": "https://www.moorafrika.com/",
+      "type": "freelance-project",
+      "start_date": "2026-05",
+      "end_date": "2026-06",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Auth.js",
+        "shadcn/ui",
+        "Cloudflare R2",
+        "Paystack API",
+        "Resend",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20072015.png"
+    },
+    {
+      "id": 3,
       "name": "ShopSphere",
       "short_description": "A full-stack multi-vendor e-commerce platform that enables users to create and manage online stores with custom domains, manage products and orders, and securely process payments through Stripe and Paystack.",
       "long_description": "ShopSphere is a full-stack multi-vendor e-commerce platform designed to allow users to create and operate their own online stores. Each store can have its own domain, storefront, product catalog, and administrative dashboard, providing a complete foundation for running an independent e-commerce business. The platform includes product and inventory management, product variants, shopping carts, order processing, customer management, analytics, and Stripe-powered payments. It also implements authentication, role-based access control, domain-based routing, Firebase-powered media storage, and a responsive UI designed for both desktop and mobile users.",
@@ -33,12 +101,52 @@
         "shadcn/ui",
         "React Hook Form",
         "Zod",
-        "Redux Toolkit",
+        "Prisma",
+        "PostgreSQL",
         "Cloudflare R2",
         "Stripe API",
         "Paystack API"
       ],
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-03%20091048.png"
+    },
+    {
+      "id": 4,
+      "name": "NovaCare",
+      "short_description": "A full-stack hospital management system that centralizes patient care, appointments, admissions, consultations, laboratory services, prescriptions, billing, and hospital operations in a unified platform",
+      "long_description": "NovaCare is a full-stack hospital management system designed to digitize and streamline day-to-day healthcare operations. It provides a centralized platform for managing patients, doctors, appointments, admissions, consultations, laboratory requests, prescriptions, pharmacy operations, billing, wards, departments, and hospital staff. The system uses a modular backend architecture where each major healthcare workflow is separated into its own domain, making the application easier to maintain and extend. It also implements authentication and protected access, structured API services, database migrations, shared validation schemas, and a dedicated reporting/summary layer for operational insights. The application is organized as a monorepo containing a Next.js frontend, TypeScript backend, and shared package for DTOs and validation schemas, backed by PostgreSQL and Prisma.",
+      "features": [
+        "Patient Management — Create, manage, and maintain patient records.",
+        "Doctor Management — Manage doctors and their associated departments and workflows.",
+        "Appointment Management — Schedule and manage patient appointments",
+        "Patient Admissions — Handle hospital admission workflows and records.",
+        "Medical Consultations — Manage consultations between doctors and patients.",
+        "Laboratory Management — Create and manage laboratory requests and workflows.",
+        "Prescription Management — Manage prescriptions associated with patient care.",
+        "Pharmacy Management — Manage medicines and pharmacy-related operations.",
+        "Billing — Handle patient bills and hospital payment records.",
+        "Ward Management — Organize and manage hospital wards.",
+        "Department Management — Manage hospital departments and their resources.",
+        "Staff Management — Centralize hospital staff records and management.",
+        "Reporting & Summaries — Provide structured operational data and summaries.",
+        "Authentication & Authorization — Protected API endpoints and authenticated access.",
+        "Validation Layer — Shared DTOs and validation schemas between application components.",
+        "Modular Backend Architecture — Separate domain modules for individual hospital workflows.",
+        "Database Migrations — Prisma-based database schema and migration management."
+      ],
+      "github": "https://github.com/Fortunejite/NovaCare",
+      "website": "https://nova-care-backend.vercel.app/",
+      "type": "side-project",
+      "start_date": "2026-06",
+      "end_date": "2026-07",
+      "technologies": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express.js",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20064626.png"
     }
   ],
   "education": [
