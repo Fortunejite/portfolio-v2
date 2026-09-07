@@ -142,7 +142,7 @@ export default function ProjectsFilterGrid({ initialProjects }: ProjectsFilterGr
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-linear-to-t from-[#0a0a20] via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#0a0a20]/50 from-0% via-transparent via-20% to-transparent opacity-80" />
 
                   {/* Top Badges */}
                   <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2 z-10">
