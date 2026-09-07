@@ -149,7 +149,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20064626.png"
     },
     {
-      "id": "e1f2g3h4-i5j6-k7l8-m9n0-o1p2q3r4s5t6",
+      "id": "s1t2u3v4-w5x6-y7z8-a9b0-c1d2e3f4g5h6",
       "name": "Job Pilot",
       "short_description": "A full-stack job marketplace that connects employers with job seekers, enabling businesses to post opportunities and manage applicants while workers discover, save, and apply for relevant jobs.",
       "long_description": "JobPilot is a full-stack recruitment and job marketplace platform designed to connect employers with qualified job seekers through a centralized platform. Employers can create and manage company profiles, publish job opportunities, and review applications, while workers can create profiles, discover relevant opportunities, save jobs, and manage their applications.\nThe platform is built with Next.js 15 and MongoDB, with a structured API layer covering jobs, companies, workers, applications, saved jobs, saved workers, categories, users, and platform statistics. Authentication is handled through NextAuth, while the application uses Mongoose for database modeling and Zod for input validation.\nThe system also separates the application into distinct user experiences and backend domains, providing a foundation for both sides of the recruitment marketplace—employers looking for talent and workers looking for opportunities.",
@@ -186,7 +186,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20202743.png"
     },
     {
-      "id": "f1g2h3i4-j5k6-l7m8-n9o0-p1q2r3s4t5u6",
+      "id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
       "name": "Invest Pro",
       "short_description": "A full-stack investment simulation platform that allows users to manage investment plans, track portfolio activity, access premium trading signals, and manage cryptocurrency deposits and withdrawals through a dedicated user dashboard.",
       "long_description": "InvestPro is a full-stack investment simulation and management platform designed to replicate the core workflows of an online investment service. Users can create accounts, verify their email, purchase investment plans, monitor their portfolio, manage transactions, and access premium trading signals through a responsive dashboard.\nThe platform includes a cryptocurrency-based deposit and withdrawal system supporting multiple blockchain networks, with transactions routed through administrator-managed wallet addresses and reviewed through an administrative dashboard. It also provides subscription-based access to premium trading signals and centralized management tools for investment plans, users, transactions, signals, wallets, and system configuration.\nThe backend is built with Node.js and Express using PostgreSQL and Prisma, with Redis supporting background queues and caching. Scheduled jobs handle automated platform processes, while JWT authentication with refresh tokens provides persistent user sessions. The system also incorporates validation, rate limiting, password hashing, and role-based administrative controls.",
@@ -231,7 +231,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20203623.png"
     },
     {
-      "id": "f1g2h3i4-j5k6-l7m8-n9o0-p1q2r3s4t5u6",
+      "id": "r1s2t3u4-v5w6-x7y8-z9a0-b1c2d3e4f5g6",
       "name": "NFT Marketplace",
       "short_description": "A decentralized NFT marketplace built on the Aptos blockchain that allows users to mint, buy, sell, and auction NFTs through an integrated Web3 wallet interface.",
       "long_description": "The Aptos NFT Marketplace is a decentralized Web3 application built on the Aptos blockchain, allowing users to create, trade, and auction digital assets directly through blockchain transactions.\nUnlike a traditional marketplace backed by a centralized database, the core marketplace functionality is implemented through Move smart contracts deployed on Aptos. Users can connect their Aptos-compatible wallet, mint their own NFTs, list assets for fixed-price sales, purchase NFTs from other users, or create auctions where other participants can place competitive bids.\nThe project was developed as part of the StackUp Aptos IV bounty, providing hands-on experience with Aptos blockchain development, Move smart contracts, wallet integration, and decentralized application architecture.",
@@ -315,6 +315,7 @@
         "Custom navigation and category-based routing"
       ],
       "github": "https://github.com/Fortunejite/movie-zone",
+      "website": "https://movie-zone-drab.vercel.app/",
       "type": "side-project",
       "start_date": "2024-01",
       "end_date": "2024-01",

@@ -11,7 +11,7 @@ const CardProject = ({
   type,
   website,
 }: {
-  id: number;
+  id: string;
   image: string;
   name: string;
   description: string;
