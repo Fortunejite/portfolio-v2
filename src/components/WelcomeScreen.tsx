@@ -70,8 +70,9 @@ const WelcomeScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void })
   const containerVariants: Variants = {
     exit: {
       opacity: 0,
-      scale: 1.1,
-      filter: "blur(10px)",
+      scale: 1.05,
+      // filter: blur() intentionally removed — causes iOS Safari to go blank
+      // after the exit animation due to a compositor bug with fixed+blur elements
       transition: {
         duration: 0.8,
         ease: "easeInOut",
