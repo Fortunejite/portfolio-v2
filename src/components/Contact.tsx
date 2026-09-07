@@ -110,7 +110,7 @@ const ContactPage = () => {
         className="h-auto py-10 flex items-center justify-center px-[5%] md:px-0"
         id="Contact"
       >
-        <div className="container px-[10%]">
+        <div className="container md:px-[10%]">
           <div
             data-aos="fade-right"
             data-aos-duration="1200"

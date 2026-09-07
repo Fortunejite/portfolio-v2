@@ -247,7 +247,7 @@ const AboutPage = () => {
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
                 </button>
               </Link>
-              <Link href="#Portfolio" className="w-full lg:w-auto">
+              <Link href="/projects" className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"
                   data-aos-duration="1000"
