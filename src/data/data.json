@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "id": "d79ce529-2c84-4dd8-9065-b63071734470",
+      "id": "flyfit",
       "name": "FlyFit",
       "short_description": "A production fitness studio platform built for a Bahrain-based women-only bungee fitness studio, enabling members to browse packages and classes, purchase memberships, manage group packages, and book classes online.",
-      "long_description": "FlyFit is a full-stack web application developed for a Bahrain-based women-only bungee fitness studio. The platform provides the studio with a complete digital membership and booking experience, allowing customers to create accounts, browse fitness packages and class schedules, purchase packages, manage group memberships, and book or cancel classes. The application integrates directly with ERPNext/Frappe, which serves as the central source of truth for members, packages, classes, bookings, and payments. I implemented a backend-for-frontend architecture using Next.js API routes to securely communicate with ERPNext and external payment providers without exposing sensitive credentials to the client. The platform supports Credimax/Mastercard credit-card payments, including 3D Secure authentication, as well as BenefitPay, a Bahrain-based payment gateway. Payment verification and membership activation are handled server-side, with idempotency safeguards to prevent duplicate payment records. The project was delivered as a freelance project for a Bahrain-based client and is actively used by 300+ members, making it a strong example of building and integrating a production system for a real business.",
+      "long_description": "FlyFit is a full-stack web application developed for a Bahrain-based women-only bungee fitness studio. The platform provides the studio with a complete digital membership and booking experience, allowing customers to create accounts, browse fitness packages and class schedules, purchase packages, manage group memberships, and book or cancel classes.\nThe application integrates directly with ERPNext/Frappe, which serves as the central source of truth for members, packages, classes, bookings, and payments. I implemented a backend-for-frontend architecture using Next.js API routes to securely communicate with ERPNext and external payment providers without exposing sensitive credentials to the client.\nThe platform supports Credimax/Mastercard credit-card payments, including 3D Secure authentication, as well as BenefitPay, a Bahrain-based payment gateway. Payment verification and membership activation are handled server-side, with idempotency safeguards to prevent duplicate payment records.\nThe project was delivered as a freelance project for a Bahrain-based client and is actively used by 300+ members, making it a strong example of building and integrating a production system for a real business.",
       "features": [
         "Member Registration & Authentication — ERPNext-backed signup, login, session management, and protected member areas.",
         "Fitness Package Marketplace — Members can browse available packages, view package details, and purchase memberships.",
@@ -19,6 +19,7 @@
         "Backend-for-Frontend Architecture — Next.js API routes act as a secure intermediary between the frontend, ERPNext, and payment gateways.",
         "Caching — Package and class data use server-side caching with stale-data fallback to reduce unnecessary ERPNext requests."
       ],
+      "github": "private",
       "website": "https://flyfitbh.com",
       "type": "freelance-project",
       "start_date": "2026-06",
@@ -36,10 +37,10 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20065751.png"
     },
     {
-      "id": "b8a7c630-3d95-4ee9-8166-c74182845581",
+      "id": "moorafrika",
       "name": "Moorafrika",
       "short_description": "A production e-commerce platform built for Moorafrika, a fashion brand, providing customers with a seamless online shopping experience for discovering products, managing carts, and placing orders.",
-      "long_description": "Moorafrika is a production e-commerce platform developed for a fashion brand to establish and manage its online storefront. The platform provides customers with a dedicated digital shopping experience where they can browse the brand's products, view product details, add items to their cart, and complete purchases online. Developed as a freelance project, the platform was built around the brand's real-world business requirements and is actively used by the business to support its online operations. The project involved translating a fashion brand's identity and commercial requirements into a functional e-commerce experience rather than building a purely demonstrative or academic project.",
+    "long_description": "Moorafrika is a production e-commerce platform developed for a fashion brand to establish and manage its online storefront. The platform provides customers with a dedicated digital shopping experience where they can browse the brand's products, view product details, add items to their cart, and complete purchases online.\nDeveloped as a freelance project, the platform was built around the brand's real-world business requirements and is actively used by the business to support its online operations. The project involved translating a fashion brand's identity and commercial requirements into a functional e-commerce experience rather than building a purely demonstrative or academic project.",
       "features": [
         "Online Storefront — Dedicated digital storefront for the Moorafrika fashion brand.",
         "Product Catalog — Customers can browse the brand's available products.",
@@ -50,6 +51,7 @@
         "Brand-Focused UI — The storefront is tailored around the visual identity and presentation of the fashion brand.",
         "Production Deployment — Built and deployed for actual business use rather than as a demo project."
       ],
+      "github": "private",
       "website": "https://www.moorafrika.com/",
       "type": "freelance-project",
       "start_date": "2026-05",
@@ -69,10 +71,10 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20072015.png"
     },
     {
-      "id": "c9b8d741-4e06-4ff0-9267-d85293956692",
+      "id": "shopsphere",
       "name": "ShopSphere",
       "short_description": "A full-stack multi-vendor e-commerce platform that enables users to create and manage online stores with custom domains, manage products and orders, and securely process payments through Stripe and Paystack.",
-      "long_description": "ShopSphere is a full-stack multi-vendor e-commerce platform designed to allow users to create and operate their own online stores. Each store can have its own domain, storefront, product catalog, and administrative dashboard, providing a complete foundation for running an independent e-commerce business. The platform includes product and inventory management, product variants, shopping carts, order processing, customer management, analytics, and Stripe-powered payments. It also implements authentication, role-based access control, domain-based routing, Firebase-powered media storage, and a responsive UI designed for both desktop and mobile users.",
+      "long_description": "ShopSphere is a full-stack multi-vendor e-commerce platform designed to allow users to create and operate their own online stores. Each store can have its own domain, storefront, product catalog, and administrative dashboard, providing a complete foundation for running an independent e-commerce business.\nThe platform includes product and inventory management, product variants, shopping carts, order processing, customer management, analytics, and Stripe-powered payments. It also implements authentication, role-based access control, domain-based routing, Firebase-powered media storage, and a responsive UI designed for both desktop and mobile users.",
       "features": [
         "Multi-Vendor Stores — Users can create and manage independent online shops.",
         "Custom Domain Routing — Each store can be accessed through its own domain/subdomain.",
@@ -110,10 +112,10 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-03%20091048.png"
     },
     {
-      "id": "d0e1f2g3-h4i5-j6k7-l8m9-n0o1p2q3r4s5",
+      "id": "novacare",
       "name": "NovaCare",
       "short_description": "A full-stack hospital management system that centralizes patient care, appointments, admissions, consultations, laboratory services, prescriptions, billing, and hospital operations in a unified platform",
-      "long_description": "NovaCare is a full-stack hospital management system designed to digitize and streamline day-to-day healthcare operations. It provides a centralized platform for managing patients, doctors, appointments, admissions, consultations, laboratory requests, prescriptions, pharmacy operations, billing, wards, departments, and hospital staff. The system uses a modular backend architecture where each major healthcare workflow is separated into its own domain, making the application easier to maintain and extend. It also implements authentication and protected access, structured API services, database migrations, shared validation schemas, and a dedicated reporting/summary layer for operational insights. The application is organized as a monorepo containing a Next.js frontend, TypeScript backend, and shared package for DTOs and validation schemas, backed by PostgreSQL and Prisma.",
+      "long_description": "NovaCare is a full-stack hospital management system designed to digitize and streamline day-to-day healthcare operations. It provides a centralized platform for managing patients, doctors, appointments, admissions, consultations, laboratory requests, prescriptions, pharmacy operations, billing, wards, departments, and hospital staff.\nThe system uses a modular backend architecture where each major healthcare workflow is separated into its own domain, making the application easier to maintain and extend. It also implements authentication and protected access, structured API services, database migrations, shared validation schemas, and a dedicated reporting/summary layer for operational insights.\nThe application is organized as a monorepo containing a Next.js frontend, TypeScript backend, and shared package for DTOs and validation schemas, backed by PostgreSQL and Prisma.",
       "features": [
         "Patient Management — Create, manage, and maintain patient records.",
         "Doctor Management — Manage doctors and their associated departments and workflows.",
@@ -149,7 +151,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20064626.png"
     },
     {
-      "id": "s1t2u3v4-w5x6-y7z8-a9b0-c1d2e3f4g5h6",
+      "id": "job-pilot",
       "name": "Job Pilot",
       "short_description": "A full-stack job marketplace that connects employers with job seekers, enabling businesses to post opportunities and manage applicants while workers discover, save, and apply for relevant jobs.",
       "long_description": "JobPilot is a full-stack recruitment and job marketplace platform designed to connect employers with qualified job seekers through a centralized platform. Employers can create and manage company profiles, publish job opportunities, and review applications, while workers can create profiles, discover relevant opportunities, save jobs, and manage their applications.\nThe platform is built with Next.js 15 and MongoDB, with a structured API layer covering jobs, companies, workers, applications, saved jobs, saved workers, categories, users, and platform statistics. Authentication is handled through NextAuth, while the application uses Mongoose for database modeling and Zod for input validation.\nThe system also separates the application into distinct user experiences and backend domains, providing a foundation for both sides of the recruitment marketplace—employers looking for talent and workers looking for opportunities.",
@@ -186,7 +188,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20202743.png"
     },
     {
-      "id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+      "id": "invest-pro",
       "name": "Invest Pro",
       "short_description": "A full-stack investment simulation platform that allows users to manage investment plans, track portfolio activity, access premium trading signals, and manage cryptocurrency deposits and withdrawals through a dedicated user dashboard.",
       "long_description": "InvestPro is a full-stack investment simulation and management platform designed to replicate the core workflows of an online investment service. Users can create accounts, verify their email, purchase investment plans, monitor their portfolio, manage transactions, and access premium trading signals through a responsive dashboard.\nThe platform includes a cryptocurrency-based deposit and withdrawal system supporting multiple blockchain networks, with transactions routed through administrator-managed wallet addresses and reviewed through an administrative dashboard. It also provides subscription-based access to premium trading signals and centralized management tools for investment plans, users, transactions, signals, wallets, and system configuration.\nThe backend is built with Node.js and Express using PostgreSQL and Prisma, with Redis supporting background queues and caching. Scheduled jobs handle automated platform processes, while JWT authentication with refresh tokens provides persistent user sessions. The system also incorporates validation, rate limiting, password hashing, and role-based administrative controls.",
@@ -231,7 +233,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20203623.png"
     },
     {
-      "id": "r1s2t3u4-v5w6-x7y8-z9a0-b1c2d3e4f5g6",
+      "id": "nft-marketplace",
       "name": "NFT Marketplace",
       "short_description": "A decentralized NFT marketplace built on the Aptos blockchain that allows users to mint, buy, sell, and auction NFTs through an integrated Web3 wallet interface.",
       "long_description": "The Aptos NFT Marketplace is a decentralized Web3 application built on the Aptos blockchain, allowing users to create, trade, and auction digital assets directly through blockchain transactions.\nUnlike a traditional marketplace backed by a centralized database, the core marketplace functionality is implemented through Move smart contracts deployed on Aptos. Users can connect their Aptos-compatible wallet, mint their own NFTs, list assets for fixed-price sales, purchase NFTs from other users, or create auctions where other participants can place competitive bids.\nThe project was developed as part of the StackUp Aptos IV bounty, providing hands-on experience with Aptos blockchain development, Move smart contracts, wallet integration, and decentralized application architecture.",
@@ -267,7 +269,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202026-09-06%20204743.png"
     },
     {
-      "id": "e1f2g3h4-i5j6-k7l8-m9n0-o1p2q3r4s5t6",
+      "id": "talkify",
       "name": "Talkify",
       "short_description": "A real-time chat application that enables users to communicate instantly through private conversations and group chats, powered by WebSocket-based communication.",
       "long_description": "Talkify is a real-time messaging application built to demonstrate the fundamentals of event-driven communication between clients and servers. The application uses Node.js, Express, Socket.IO, and MongoDB to provide real-time messaging and group communication.\nThe backend follows a structured architecture with dedicated controllers, routes, middleware, utilities, and views. Socket.IO handles persistent real-time communication, allowing messages and chat activity to be delivered between connected clients without requiring traditional request-response polling. The application also includes user authentication and activity tracking alongside its messaging functionality.\nTalkify was one of my earlier full-stack projects and served as an important foundation for working with WebSockets, real-time application architecture, server-side JavaScript, and MongoDB-backed applications.",
@@ -300,7 +302,7 @@
       "image": "https://pub-218b36c1b3044259aa3c5974a4438661.r2.dev/projects/Screenshot%202025-03-09%20140842.png"
     },
     {
-      "id": "f1g2h3i4-j5k6-l7m8-n9o0-p1q2r3s4t5u6",
+      "id": "movie-zone",
       "name": "Movie Zone",
       "short_description": "A movie discovery web application that uses the TMDB API to help users explore currently playing, popular, top-rated, and upcoming movies through a responsive, visually focused interface.",
       "long_description": "Movie Zone is a movie catalogue and discovery platform built with Next.js and the TMDB API. The application organizes movie data into dedicated sections for Now Playing, Popular, Top Rated, and Upcoming releases, allowing users to browse different categories and navigate through paginated movie results.\nThe application uses reusable React components for movie cards and horizontal movie sliders, while dynamic category routes provide dedicated pages for browsing larger collections. Movie data is retrieved directly from TMDB through server-side API requests using a protected API key stored in environment variables.",

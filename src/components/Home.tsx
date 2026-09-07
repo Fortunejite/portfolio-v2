@@ -69,7 +69,7 @@ SocialLink.displayName = "SocialLink";
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Problem Solver", "Tech Innovator", "AI Enthusiast", "Web3 Enthusiast"];
+const WORDS = ["Freelancer", "Problem Solver", "AI Enthusiast", "Web3 Enthusiast"];
 const TECH_STACK = ["Next.js", "PostgreSQL", "TypeScript", "Tailwind CSS"];
 const SOCIAL_LINKS = [
   { icon: Github, link: portfolio.social_links.github },

@@ -13,7 +13,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Certificate from "./ui/Certificate";
 import { Code, Award, Boxes } from "lucide-react";
-import { projects, education } from "@/data/data.json";
+import { education } from "@/data/data.json";
+import { getAllProjects } from "@/lib/projects";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
+const projects = getAllProjects();
 
 // Separate ShowMore/ShowLess button component
 const ToggleButton = ({ onClick, isShowingMore }: { onClick: () => void; isShowingMore: boolean }) => (
@@ -133,15 +138,11 @@ const techStacks = [
 export default function Portfolio() {
   const theme = useTheme();
   const [value, setValue] = useState(0);
-  const [showAllProjects, setShowAllProjects] = useState(false);
-  const [showAllCertificates, setShowAllCertificates] = useState(false);
-  const isMobile = window.innerWidth < 768;
-  const initialItems = isMobile ? 4 : 6;
 
   useEffect(() => {
     // Initialize AOS once
     AOS.init({
-      once: false, // This will make animations occur only once
+      once: false,
     });
   }, []);
 
@@ -149,16 +150,8 @@ export default function Portfolio() {
     setValue(newValue);
   };
 
-  const toggleShowMore = useCallback((type: 'projects' | 'certificates') => {
-    if (type === 'projects') {
-      setShowAllProjects(prev => !prev);
-    } else {
-      setShowAllCertificates(prev => !prev);
-    }
-  }, []);
-
-  const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
-  const displayedCertificates = showAllCertificates ? education : education.slice(0, initialItems);
+  const displayedProjects = projects.slice(0, 4);
+  const displayedCertificates = education.slice(0, 4);
 
   return (
     <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-12 bg-[#030014] overflow-hidden" id="Portfolio">
@@ -182,7 +175,7 @@ export default function Portfolio() {
       </div>
 
       <Box sx={{ width: "100%" }}>
-        {/* AppBar and Tabs section - unchanged */}
+        {/* AppBar and Tabs section */}
         <AppBar
           position="static"
           elevation={0}
@@ -206,7 +199,6 @@ export default function Portfolio() {
           }}
           className="md:px-4"
         >
-          {/* Tabs remain unchanged */}
           <Tabs
             value={value}
             onChange={handleChange}
@@ -214,7 +206,6 @@ export default function Portfolio() {
             indicatorColor="secondary"
             variant="fullWidth"
             sx={{
-              // Existing styles remain unchanged
               minHeight: "70px",
               "& .MuiTab-root": {
                 fontSize: { xs: "0.9rem", md: "1rem" },
@@ -295,19 +286,20 @@ export default function Portfolio() {
                 ))}
               </div>
             </div>
-            {projects.length > initialItems && (
-              <div className="mt-6 w-full flex justify-start">
-                <ToggleButton
-                  onClick={() => toggleShowMore('projects')}
-                  isShowingMore={showAllProjects}
-                />
-              </div>
-            )}
+            <div className="mt-6 w-full flex justify-center">
+              <Link
+                href="/projects"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-linear-to-r from-purple-600/20 to-blue-600/20 hover:from-purple-600/30 hover:to-blue-600/30 text-purple-200 hover:text-white text-sm font-semibold border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 shadow-lg shadow-purple-500/10"
+              >
+                <span>Explore Full Projects Catalog</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </TabPanel>
 
           <TabPanel value={value} index={1} dir={theme.direction}>
             <div className="container mx-auto flex justify-center items-center overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 md:gap-5 gap-4">
                 {displayedCertificates.map((certificate, index) => (
                   <div
                     key={index}
@@ -323,14 +315,15 @@ export default function Portfolio() {
                 ))}
               </div>
             </div>
-            {education.length > initialItems && (
-              <div className="mt-6 w-full flex justify-start">
-                <ToggleButton
-                  onClick={() => toggleShowMore('certificates')}
-                  isShowingMore={showAllCertificates}
-                />
-              </div>
-            )}
+            <div className="mt-6 w-full flex justify-center">
+              <Link
+                href="/certifications"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-linear-to-r from-purple-600/20 to-blue-600/20 hover:from-purple-600/30 hover:to-blue-600/30 text-purple-200 hover:text-white text-sm font-semibold border border-purple-500/30 hover:border-purple-500/50 transition-all duration-300 shadow-lg shadow-purple-500/10"
+              >
+                <span>Explore Full Certificates Catalog</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </TabPanel>
 
           <TabPanel value={value} index={2} dir={theme.direction}>
