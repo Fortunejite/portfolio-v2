@@ -145,27 +145,7 @@ export default function ProjectsFilterGrid({ initialProjects }: ProjectsFilterGr
                   <div className="absolute inset-0 bg-linear-to-t from-[#0a0a20]/50 from-0% via-transparent via-20% to-transparent opacity-80" />
 
                   {/* Top Badges */}
-                  <div className="absolute top-3 left-3 right-3 flex items-center justify-between gap-2 z-10">
-                    <span
-                      className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-md border ${
-                        isFreelance
-                          ? 'bg-emerald-950/80 text-emerald-300 border-emerald-500/40 shadow-lg shadow-emerald-950/50'
-                          : 'bg-purple-950/80 text-purple-300 border-purple-500/40 shadow-lg shadow-purple-950/50'
-                      }`}
-                    >
-                      {isFreelance ? (
-                        <>
-                          <Briefcase className="w-3 h-3 text-emerald-400" />
-                          <span>Freelance</span>
-                        </>
-                      ) : (
-                        <>
-                          <Code className="w-3 h-3 text-purple-400" />
-                          <span>Side Project</span>
-                        </>
-                      )}
-                    </span>
-
+                  <div className="absolute top-3 left-3 right-3 flex items-center justify-end gap-2 z-10">
                     {dateRange && (
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium bg-black/60 text-gray-300 backdrop-blur-md border border-white/10">
                         <Calendar className="w-3 h-3 text-gray-400" />
@@ -178,9 +158,23 @@ export default function ProjectsFilterGrid({ initialProjects }: ProjectsFilterGr
                 {/* Card Content */}
                 <div className="flex flex-col flex-1 p-5 md:p-6 z-10 space-y-4">
                   <div className="space-y-2">
+                    <div className="flex justify-between gap-2">
                     <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-blue-200 group-hover:via-purple-200 group-hover:to-pink-200 transition-all duration-300">
                       {project.name}
                     </h3>
+                    {isFreelance && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 shadow-lg shadow-emerald-950/50">
+                        <Briefcase className="w-3 h-3 text-emerald-400" />
+                        <span>Freelance</span>
+                      </span>
+                    )}
+                    {!isFreelance && (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-medium bg-purple-950/80 text-purple-300 border border-purple-500/40 shadow-lg shadow-purple-950/50">
+                        <Code className="w-3 h-3 text-purple-400" />
+                        <span>Side Project</span>
+                      </span>
+                    )}
+                    </div>
                     <p className="text-gray-300/80 text-sm leading-relaxed line-clamp-3">
                       {project.short_description}
                     </p>
