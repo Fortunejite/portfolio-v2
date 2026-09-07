@@ -4,6 +4,7 @@ import About from '@/components/About';
 import AnimatedBackground from '@/components/Background';
 import ContactPage from '@/components/Contact';
 import Home from '@/components/Home';
+import { useHasLoaded } from '@/components/loadedContext';
 import Navbar from '@/components/Navbar';
 import Portfolio from '@/components/Portfolio';
 import WelcomeScreen from '@/components/WelcomeScreen';
@@ -12,15 +13,22 @@ import { useState } from 'react';
 
 export default function HomePage() {
   const [showWelcome, setShowWelcome] = useState(true);
+  const { setIsLoaded, isLoaded } = useHasLoaded();
+
+  const onLoadComplete = () => {
+    setShowWelcome(false);
+    setIsLoaded(true);
+  };
+
   return (
     <>
       <AnimatePresence mode="wait">
-        {showWelcome && (
-          <WelcomeScreen onLoadingComplete={() => setShowWelcome(false)} />
+        {showWelcome && !isLoaded && (
+          <WelcomeScreen onLoadingComplete={onLoadComplete} />
         )}
       </AnimatePresence>
 
-      {!showWelcome && (
+      {(!showWelcome || isLoaded) && (
         <>
           <Navbar />
           <AnimatedBackground />
